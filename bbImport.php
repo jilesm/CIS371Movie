@@ -1,5 +1,5 @@
 <?PHP
-$l=mysqli_connect("34.224.83.184","student15","phppass15","student15");
+$l=mysqli_connect("34.224.83.184","student4","phppass4","student4");
 /*
 $url = $_POST['launch_presentation_return_url'];
 $query=parse_url($url,PHP_URL_QUERY);

@@ -25,11 +25,16 @@ echo "<table border='1'>
 <th>Movie Name</th>
 </tr>";
 
+
+
 while($row = mysqli_fetch_array($result))
 {
-    echo "<tr>";
-    echo "<td>" . $row['movieName'] . "</td>";
-    echo "</tr>";
+//     echo "<tr>";
+//     echo "<td>" . $row['movieName'] . "</td>";
+//     echo "</tr>";
+
+    echo '<td><input type="checkbox" value="" name="additem[]" /> '. $row['movieName'] . '</td>';
+    echo '</tr>';
 }
 echo "</table>";
 

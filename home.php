@@ -20,10 +20,8 @@ if(mysqli_connect_errno()){
 
 $result = mysqli_query($l,"select * from movies2");
 
-echo "<table border='1'>
-<tr>
-<th>Movie Name</th>
-</tr>";
+echo "<table border='1' cellpadding=10>";
+echo "<tr><th>Movie Name</th></tr>";
 
 
 

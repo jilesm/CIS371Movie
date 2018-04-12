@@ -2,7 +2,13 @@
 session_start();
 
 require("auth.php");
+$l=mysqli_connect("34.224.83.184", "student4", "phppass4", "student4");
 
+if(mysqli_connect_errno()){
+    echo "Connect could not be made" .mysqli_error();
+}
+
+$result = mysqli_query($l,"select * from movies2");
 ?>
 
 <html>
@@ -47,22 +53,15 @@ require("auth.php");
         <title>Movie Ratings</title>
 </head>
 
+<header>
+<?PHP require("menu.php");?>
+</header>
+
 <body>
         <div id="chart_div" style="width: 900px; height: 500px;"></div>
 <?php
-require("menu.php");
-$l=mysqli_connect("34.224.83.184", "student4", "phppass4", "student4");
-
-if(mysqli_connect_errno()){
-    echo "Connect could not be made" .mysqli_error();
-}
-
-$result = mysqli_query($l,"select * from movies2");
-
 echo "<table border='1' cellpadding=10>";
 echo "<tr><th>Movie Name</th></tr>";
-
-
 
 while($row = mysqli_fetch_array($result))
 {

@@ -7,7 +7,7 @@
 
 <body>
 Hello User. Welcome to our site. To continue please login.
-<form action= "process.php" method="post">
+<form action= "process.php" method="POST">
 <br />
 Username
 <br />

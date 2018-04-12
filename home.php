@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require("auth.php");
+//require("auth.php");
 $l=mysqli_connect("34.224.83.184", "student4", "phppass4", "student4");
 
 if(mysqli_connect_errno()){

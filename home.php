@@ -1,18 +1,23 @@
-<?php
+<?php 
 session_start();
 
+<<<<<<< HEAD
 //require("auth.php");
 $l=mysqli_connect("34.224.83.184", "student4", "phppass4", "student4");
 
 if(mysqli_connect_errno()){
     echo "Connect could not be made" .mysqli_error();
 }
+=======
+require("auth.php");
+>>>>>>> parent of d3ece6e... Update home.php
 
 $result = mysqli_query($l,"select * from movies2");
 ?>
 
 <html>
 <head>
+<<<<<<< HEAD
 
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
@@ -92,6 +97,9 @@ $result = mysqli_query($l,"select * from movies2");
       }
     </script>
         <title>Movie Ratings</title>
+=======
+	<title>Movie Ratings</title>
+>>>>>>> parent of d3ece6e... Update home.php
 </head>
 
 <header>
@@ -99,11 +107,15 @@ $result = mysqli_query($l,"select * from movies2");
 </header>
 
 <body>
+<<<<<<< HEAD
         <div id="chart_div" style="width: 900px; height: 500px;"></div>
 <?php
 
 require("menu.php");
 
+=======
+<?php 
+>>>>>>> parent of d3ece6e... Update home.php
 $l=mysqli_connect("34.224.83.184", "student4", "phppass4", "student4");
 
 if(mysqli_connect_errno()){

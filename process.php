@@ -3,7 +3,6 @@ session_status();
 
 $username = $_POST['username'];
 $password = $_POST['password'];
-$login = false;
 
 if ($username == "admin" && $password == "welcome")
 {
@@ -22,12 +21,12 @@ else {
     $_SESSION['auth'] = "";
 }
 
-if ($login == true)
+/*if ($login == true)
 {
     header("location: home.php");
 die();
 }
-
+*/
 ?>
 
 <html>

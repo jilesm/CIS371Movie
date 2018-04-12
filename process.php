@@ -23,7 +23,7 @@ else {
 
 /*if ($login == true)
 {
-    header("location: account.php");
+    header("location: home.php");
 die();
 }
 */

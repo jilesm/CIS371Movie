@@ -61,7 +61,7 @@ $result = mysqli_query($l,"select * from movies2");
         <div id="chart_div" style="width: 900px; height: 325px;"></div>
 <?php 
 
-echo "<table border='1' cellpadding=10>";
+echo "<table id="movies" border='1' cellpadding=10>";
 echo "<tr><th>Movie Name</th></tr>";
 
 while($row = mysqli_fetch_array($result))

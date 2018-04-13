@@ -1,5 +1,5 @@
 <?php
-session_status();
+session_start();
 
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -16,7 +16,7 @@ else {
 
 if ($login == true)
 {
-    $_SESSION['auth'] = username;
+    $_SESSION['auth'] = $username;
 }
 else {
     $_SESSION['auth'] = "";

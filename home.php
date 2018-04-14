@@ -12,7 +12,9 @@ $result = mysqli_query($l,"select * from movies2");
 
 <html>
 <head> 
+<link rel="stylesheet" type="text/css" href="home.css">
 
+    
 <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">

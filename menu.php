@@ -1,4 +1,17 @@
-<a href="home.php">Home</a>
-<a href="donate.php">Donate</a>
-<a href="help.php">Help</a>
-<a href="logout.php">Logout</a>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="menu.css">
+</head>
+<body>
+<ul>
+<li> <a href="home.php">Home</a></li>
+ <li><a href="donate.php">Donate</a></li>
+<li><a href="help.php">Help</a></li>
+<li><a href="logout.php">Logout</a></li>
+</ul>
+</body>
+</html>
+
+
+
+

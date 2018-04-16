@@ -2,9 +2,14 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 250px;
+  max-width: 300px;
   position: relative;
   margin: auto;
+}
+#Movies {
+ text-align: center;
+ postion: relative;
+ color: purple;
 }
 
 /* Hide the images by default */

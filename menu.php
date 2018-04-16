@@ -4,6 +4,7 @@
 <link rel="stylesheet" type="text/css" href="menu.css">
 </head>
 <body>
+  <div id="nav">
 <ul>
 <li style="float:left"> <a href="home.php">Home</a></li>
 <li style="float:left"><a href="donate.php">Donate</a></li>
@@ -11,5 +12,6 @@
 <li style="float:left"><a href="movie.php">Movies</a></li>
 <li style="float:left"><a href="logout.php">Logout</a></li>
 </ul>
+</div>
 </body>
 </html>

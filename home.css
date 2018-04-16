@@ -9,6 +9,8 @@
         border: 10px solid purple;
         width: 100%;
         text-align: center;
+        margin: 0 auto;
+        position: : relative;
 }
 
 th, td {
@@ -50,4 +52,11 @@ li {
 
 li:last-child {
     border-right: none;
+}
+
+#chart_div {
+    margin: auto;
+    postion: relative;
+    padding-right: 180px;
+    max-width: 200px;
 }

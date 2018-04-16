@@ -13,7 +13,11 @@ require('auth.php');
 </head>
 
 <body>
+<div id="Movies">
+<h1>Top 2017 Movies</h1
 
+
+</div>
 
 <!-- Slideshow container -->
 <div class="slideshow-container">

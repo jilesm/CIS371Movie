@@ -2,6 +2,7 @@
 session_start();
 //require("auth.php");
 $l=mysqli_connect("34.224.83.184", "student4", "phppass4", "student4");
+$result = mysqli_query($l,"select * from movies2");
 
 if(mysqli_connect_errno()){
     echo "Connect could not be made" .mysqli_error();

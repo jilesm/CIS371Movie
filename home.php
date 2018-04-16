@@ -1,6 +1,6 @@
 <?php
 session_start();
-//require("auth.php");
+require("auth.php");
 $l=mysqli_connect("34.224.83.184", "student4", "phppass4", "student4");
 $result = mysqli_query($l,"select * from movies2");
 
@@ -76,7 +76,7 @@ if($wonder= mysqli_query($l,"select count from movies2 where movie_id='wonder'")
 ?>
 <html>
 <head> 
-
+<link rel="stylesheet" type="text/css" href="home.css">
 <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">

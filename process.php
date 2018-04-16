@@ -8,7 +8,7 @@ $login = false;
 if ($username == "admin" && $password == "welcome")
 {
     $login = true;
-   
+
 }
 else {
     $login = false;
@@ -32,21 +32,21 @@ die();
 
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<?php 
+<?php
 require("menu.php");
 
 if ($login == true)
 {
     echo "You are logged in! Welcome $username";
-    
+
 }
-else 
+else
 {
     echo "You are not logged in.";
 }
 ?>
 </body>
 </html>
-

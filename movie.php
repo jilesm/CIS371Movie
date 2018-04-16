@@ -7,6 +7,7 @@ require('auth.php');
 
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title></title>
 <link rel ="stylesheet" type= "text/css" href = "movie.css" />
 </head>
@@ -130,4 +131,3 @@ function showSlides(n) {
 
 </body>
 </html>
-

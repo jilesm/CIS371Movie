@@ -75,7 +75,8 @@ if($wonder= mysqli_query($l,"select count from movies2 where movie_id='wonder'")
                 }}
 ?>
 <html>
-<head> 
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="home.css">
 <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -119,6 +120,7 @@ if($wonder= mysqli_query($l,"select count from movies2 where movie_id='wonder'")
       }
     </script>
         <title>Movie Ratings</title>
+
 </head>
 <header>
 <?PHP require("menu.php");?>
@@ -126,7 +128,7 @@ if($wonder= mysqli_query($l,"select count from movies2 where movie_id='wonder'")
 
 <body>
         <div id="chart_div" style="width: 900px; height: 325px;"></div>
-<?php 
+<?php
 
 echo "<table  border='1' cellpadding=10 id='display'>";
 echo "<tr><th>Movie Name</th></tr>";

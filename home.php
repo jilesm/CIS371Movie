@@ -109,7 +109,7 @@ if($wonder= mysqli_query($l,"select count from movies2 where movie_id='wonder'")
           ['Wonder Woman', <?php echo $outputWonder; ?>]
 	  ]);
  // Set chart options
-        var options = {'title':'How Much Pizza I Ate Last Night',
+        var options = {'title':'Top Movies of 2017 and who saw them',
                        'width':400,
                        'height':300};
 

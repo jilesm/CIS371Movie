@@ -128,24 +128,24 @@ if($wonder= mysqli_query($l,"select count from movies2 where movie_id='wonder'")
 
 <body>
         <div id="chart_div" style="width: 900px; height: 325px;"></div>
-<?php
+<form action='checkbox-action.php' method='post'>
+<table  border='1' cellpadding=10 id='display'>
+<tr><th>Movie Name</th></tr>
+<tr><td><input type='checkbox' value='1' name='beauty' />Beauty and the Beast</td></tr>
+<tr><td><input type='checkbox' value='1' name='despicable' />Despicable Me 3</td></tr>
+<tr><td><input type='checkbox' value='1' name='fate' />Fate of the Furious</td></tr>
+<tr><td><input type='checkbox' value='1' name='guardians' />Guardians of the Galaxy: Vol. 2</td></tr>
+<tr><td><input type='checkbox' value='1' name='it' />IT</td></tr>
+<tr><td><input type='checkbox' value='1' name='logan' />Logan</td></tr>
+<tr><td><input type='checkbox' value='1' name='spider' />Spider-Man: Homecoming</td></tr>
+<tr><td><input type='checkbox' value='1' name='star' />Star Wars: The Force Awakens</td></tr>
+<tr><td><input type='checkbox' value='1' name='Thor' />Thor: Ragnarok</td></tr>
+<tr><td><input type='checkbox' value='1' name='wonder' />Wonder Woman</td></tr>
 
-echo "<table  border='1' cellpadding=10 id='display'>";
-echo "<tr><th>Movie Name</th></tr>";
+</table>
+<input type='submit' name='formSubmit' value='Submit' />
+</form>
 
-while($row = mysqli_fetch_array($result))
-{
-//     echo "<tr>";
-//     echo "<td>" . $row['movieName'] . "</td>";
-//     echo "</tr>";
-
-    echo '<td><input type="checkbox" value="" name="additem[]" /> '. $row['movieName'] . '</td>';
-    echo '</tr>';
-}
-echo "</table>";
-
-
-?>
 </body>
 
 </html>
